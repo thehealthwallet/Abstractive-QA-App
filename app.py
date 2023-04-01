@@ -67,7 +67,8 @@ def display_context(title, context, url):
 st.write("""
 # Abstractive QA Bot
 * Features - Top K, genarator parameters
-Limited capabilities, genuinely abstarctive from wikipedia history fetching from pinecone 
+Limited capabilities, genuinely abstarctive from wikipedia history fetching from pinecone
+Exclusively for thehealthwallet.com
 """)
 
 st.markdown("""
