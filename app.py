@@ -26,12 +26,12 @@ def init_models():
     generator = BartGenerator("vblagoje/bart_lfqa")
     return retriever, generator
 
-PINECONE_KEY = "41b0a66d-ea54-4356-9ea6-98cf4208b85f"
+PINECONE_KEY = "b9447d59-d2e5-466c-a04d-e30d91ff6db2"
 
 @st.cache_resource
 def init_pinecone():
-    pinecone.init(api_key=PINECONE_KEY, environment="eu-west1-gcp")  # get a free api key from app.pinecone.io
-    return pinecone.Index("abstractive-question-answering")
+    pinecone.init(api_key=PINECONE_KEY, environment="eu-west4-gcp")  # get a free api key from app.pinecone.io
+    return pinecone.Index("meq-quick-start-guide")
 
 retriever, generator = init_models()
 index = init_pinecone()
